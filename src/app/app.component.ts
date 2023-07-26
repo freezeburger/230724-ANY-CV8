@@ -2,9 +2,24 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  template: '<app-shell></app-shell>',
+  styleUrls: []
 })
 export class AppComponent {
-  title = '230734-ANY-CV8';
+
+  constructor(){
+    console.log('constructor')
+  }
+
+  ngOnInit(){
+    console.log('ngOnInit')
+  }
+
+  ngDoCheck(){
+    // console.log('ngDoCheck')
+  }
+
+  ngOnDestroy(){
+    console.log('ngOnDestroy')
+  }
 }

@@ -1,0 +1,17 @@
+
+
+
+<div
+   *ngIf="(notificationService.data$ | async) as notification"
+   class="alert alert-{{notification.level}}">
+   {{ notification.message }}
+</div>
+
+<nav>
+  - <a routerLink="auth">Home</a>
+  - <a routerLink="products">Products</a>
+  - <a routerLink="profile">Profile</a>
+</nav>
+
+<!-- Router Loading Space -->
+<router-outlet></router-outlet>
